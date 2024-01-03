@@ -39,20 +39,21 @@ class Web3WalletService extends IWeb3WalletService {
     // Create the web3wallet
     _web3Wallet = Web3Wallet(
       core: Core(
-        projectId: DartDefines.projectId,
+        projectId: '6fa7816325c410772756243558742523',
         logLevel: LogLevel.error,
       ),
       metadata: const PairingMetadata(
-        name: 'Example Wallet',
-        description: 'Example Wallet',
-        url: 'https://walletconnect.com/',
+        name: 'TRUST SAIFU Wallet',
+        description: 'A Wallet',
+        url: 'https://trustsaifu.com/',
         icons: [
           'https://github.com/WalletConnect/Web3ModalFlutter/blob/master/assets/png/logo_wc.png'
         ],
-        redirect: Redirect(
-          native: 'myflutterwallet://',
-          universal: 'https://walletconnect.com',
-        ),
+        //not using , not setup
+        // redirect: Redirect(
+        //   native: 'myflutterwallet://',
+        //   universal: 'https://walletconnect.com',
+        // ),
       ),
     );
 
